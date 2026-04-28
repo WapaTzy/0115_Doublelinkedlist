@@ -141,4 +141,17 @@ class DoubleLinkedList
         {
             cout << i + 1 << ". "<< currentNode->noMhs<<" "<<endl;
 
-          
+            // Setap 3c: Move to next node
+            currentNode = currentNode->next;
+            i++;
+        }
+
+    }
+    void revtraverse()
+    {
+        if (START==NULL)
+        {
+            cout << "\nList is empty"<<endl;
+            return;
+        }
+   
