@@ -187,4 +187,8 @@ class DoubleLinkedList
 
         Node *current = START;
 
+        // Step 1a: Traverse to fide matching roll number
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
  
